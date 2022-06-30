@@ -1,0 +1,18 @@
+extends ../layouts/FormLayout.pug
+
+include ../components/Input.pug
+include ../components/Button.pug
+include ../components/Link.pug
+
+block headerForm
+    h1.header-forms
+        = 'Новый пароль'
+
+block inputForm
+    .inputs-forms
+        +Input('password', 'oldPassword', 'Старый пароль')
+        +Input('password', 'newPassword', 'Новый пароль')
+
+block footerForm
+    .footer-forms
+        +Button('button', 'кнопка', 'Сохранить')(class='button-form')

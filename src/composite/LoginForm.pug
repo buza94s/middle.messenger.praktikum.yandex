@@ -1,0 +1,23 @@
+extends ../layouts/FormLayout.pug
+
+include ../components/Input.pug
+include ../components/Button.pug
+include ../components/Link.pug
+
+block headerForm
+    h1.header-forms
+        = 'Регистрация'
+
+block inputForm
+    .inputs-forms
+        +Input('email', 'email', 'Почта')
+        +Input('text', 'login', 'Логин')
+        +Input('text', 'first_name', 'Имя')
+        +Input('text', 'second_name', 'Фамилия')
+        +Input('text', 'phone', 'Телефон')
+        +Input('password', 'password', 'Пароль')
+
+block footerForm
+    .footer-forms
+        +Button('button', 'кнопка', 'Зарегистрироваться')(class='button-form')
+        +Link('../pages/Signin.pug', 'Войти')(class='footer-link-form')

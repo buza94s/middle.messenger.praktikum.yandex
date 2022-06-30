@@ -1,0 +1,7 @@
+extends ../layouts/PageLayout.pug
+
+include ../components/Error.pug
+
+block content
+    .error
+        +Error('404', 'Не туда попали')

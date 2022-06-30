@@ -1,0 +1,22 @@
+extends ../layouts/FormLayout.pug
+
+include ../components/Input.pug
+include ../components/Button.pug
+include ../components/Link.pug
+
+block headerForm
+    h1.header-forms
+        = 'Изменение данных'
+
+block inputForm
+    .inputs-forms
+        +Input('email', 'email', 'Почта')
+        +Input('text', 'login', 'Логин')
+        +Input('text', 'first_name', 'Имя')
+        +Input('text', 'second_name', 'Фамилия')
+        +Input('text', 'display_name', 'Имя в чате')
+        +Input('text', 'phone', 'Телефон')
+
+block footerForm
+    .footer-forms
+        +Button('button', 'кнопка', 'Сохранить')(class='button-form')
