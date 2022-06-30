@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel ./src/pages/index.pug --no-cache",
     "build": "parcel build ./src/pages/index.pug --no-cache",
-    "server": "npm run build && node server.js"
+    "start": "npm run build && node server.js"
   },
   "keywords": [],
   "author": "",
