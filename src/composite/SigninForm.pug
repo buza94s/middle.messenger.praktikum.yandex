@@ -1,0 +1,19 @@
+extends ../layouts/FormLayout.pug
+
+include ../components/Input.pug
+include ../components/Button.pug
+include ../components/Link.pug
+
+block headerForm
+    h1.header-forms
+        = 'Вход'
+
+block inputForm
+    .inputs-forms
+        +Input('text', 'login', 'Логин')
+        +Input('password', 'password', 'Пароль')
+
+block footerForm
+    .footer-forms
+        +Button('button', 'кнопка', 'Войти')(class='button-form')
+        +Link('../pages/Login.pug', 'Создать аккаунт')(class='footer-link-form')

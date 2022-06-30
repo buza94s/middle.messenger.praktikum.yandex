@@ -1,0 +1,9 @@
+mixin Error(headerTextError, textError)
+    h1.header-error
+        = headerTextError
+
+    .info-error
+        = textError
+
+    a.footer-error(href='#')
+        = 'Назад к чатам'

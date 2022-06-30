@@ -1,0 +1,32 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel ./src/pages/index.pug --no-cache",
+    "build": "parcel build ./src/pages/index.pug --no-cache",
+    "server": "npm run build && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.0.0-nightly.1133",
+    "parcel": "^2.0.0-nightly.1131",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^8.4.14",
+    "postcss-import": "^14.1.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "postcss-loader": "^7.0.0",
+    "pug": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "parcelCleanPaths": [
+    "dist",
+    ".cache"
+  ]
+}

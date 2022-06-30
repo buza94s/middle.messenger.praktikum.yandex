@@ -1,0 +1,17 @@
+extends ../layouts/FormLayout.pug
+
+include ../components/Input.pug
+include ../components/Button.pug
+include ../components/Link.pug
+
+block headerForm
+    h1.header-forms
+        = 'Загрузить файл'
+
+block inputForm
+    .inputs-forms
+        +Input('file', 'avatar', 'Выбрать файл на компьютере')
+
+block footerForm
+    .footer-forms
+        +Button('button', 'кнопка', 'Поменять')(class='button-form')
